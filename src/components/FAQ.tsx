@@ -1,4 +1,3 @@
-
 "use client";
 
 import { useState } from 'react';
@@ -14,15 +13,17 @@ const questions = [
 ];
 
 export default function FAQ() {
-  const [openQuestion, setOpenQuestion] = useState(null);
+  const [openQuestion, setOpenQuestion] = useState<number | null>(null);
 
-const toggleQuestion = (id: any) => {
-  setOpenQuestion(openQuestion === id ? null : id);
-};
+  const toggleQuestion = (id: number) => {
+    setOpenQuestion(openQuestion === id ? null : id);
+  };
 
   return (
     <div className="max-w-2xl mx-auto mt-10 px-4 sm:px-6 mb-10 lg:px-8">
-      <h1 className="text-2xl font-semibold text-center mb-6">Resolve your Doubts here.</h1>
+      <h1 className="text-2xl font-semibold text-center mb-6">
+        Resolve your Doubts here.
+      </h1>
       <ul className="space-y-4">
         {questions.map(({ id, question, answer }) => (
           <li key={id} className="border-b">
@@ -57,4 +58,3 @@ const toggleQuestion = (id: any) => {
     </div>
   );
 }
-

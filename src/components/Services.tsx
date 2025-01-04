@@ -310,6 +310,7 @@ export default function TakeAdvantageSection() {
               <Image
                 src={item.icon}
                 alt={item.title}
+                width={500} height={300}
                 className="w-12 h-12 mb-4"
               />
               <h3 className="text-lg text-gray-600 font-bold mb-2">{item.title}</h3>
