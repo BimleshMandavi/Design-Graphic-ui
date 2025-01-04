@@ -167,6 +167,7 @@
 
 "use client";
 import { motion } from "framer-motion";
+import Image from 'next/image';
 
 export default function TakeAdvantageSection() {
   const items = [
@@ -306,7 +307,7 @@ export default function TakeAdvantageSection() {
               transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
             >
               
-              <img
+              <Image
                 src={item.icon}
                 alt={item.title}
                 className="w-12 h-12 mb-4"
@@ -317,7 +318,7 @@ export default function TakeAdvantageSection() {
           ))}
         </div>
         <motion.button
-          className="mt-8 mx-auto block border border-black hover:bg-blue-600 text-black hover:text-white py-2 px-6 rounded hover:bg-blue-500"
+          className="mt-8 mx-auto block border border-black hover:bg-blue-600 text-black hover:text-white py-2 px-6 rounded "
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: items.length * 0.1 + 0.2 }}

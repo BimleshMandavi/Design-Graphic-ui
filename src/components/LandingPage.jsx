@@ -25,7 +25,7 @@ export default function LandingPage() {
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className="hover:bg-white border border-white text-white hover:text-black px-6 py-3 rounded font-medium border-2 border-blue-600"
+            className="hover:bg-white border-white text-white hover:text-black px-6 py-3 rounded font-medium border-2 "
           >
             Sign up
           </motion.button>
