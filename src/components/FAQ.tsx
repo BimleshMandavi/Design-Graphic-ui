@@ -17,9 +17,9 @@ export default function FAQ() {
   const [openQuestion, setOpenQuestion] = useState<number | null>(null);
 
   // Ensure 'id' parameter has a defined type
-  const toggleQuestion = (id: number) => {
-    setOpenQuestion(openQuestion === id ? null : id);
-  };
+const toggleQuestion = (id: number) => {
+  setOpenQuestion(openQuestion === id ? null : id);
+};
 
   return (
     <div className="max-w-2xl mx-auto mt-10 px-4 sm:px-6 mb-10 lg:px-8">
