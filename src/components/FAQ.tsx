@@ -13,9 +13,11 @@ const questions = [
 ];
 
 export default function FAQ() {
+  // Explicitly define state type as number or null
   const [openQuestion, setOpenQuestion] = useState<number | null>(null);
 
-  const toggleQuestion = (id: any) => {
+  // Ensure 'id' parameter has a defined type
+  const toggleQuestion = (id: number) => {
     setOpenQuestion(openQuestion === id ? null : id);
   };
 
