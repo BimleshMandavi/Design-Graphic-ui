@@ -16,9 +16,9 @@ const questions = [
 export default function FAQ() {
   const [openQuestion, setOpenQuestion] = useState(null);
 
-  const toggleQuestion = (id) => {
-    setOpenQuestion(openQuestion === id ? null : id);
-  };
+const toggleQuestion = (id: any) => {
+  setOpenQuestion(openQuestion === id ? null : id);
+};
 
   return (
     <div className="max-w-2xl mx-auto mt-10 px-4 sm:px-6 mb-10 lg:px-8">
