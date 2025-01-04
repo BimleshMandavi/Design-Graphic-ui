@@ -167,7 +167,7 @@
 
 "use client";
 import { motion } from "framer-motion";
-import { FaArrowUp } from 'react-icons/fa';
+
 export default function TakeAdvantageSection() {
   const items = [
     {

@@ -1,6 +1,7 @@
 "use client";
 // HeroSection.tsx
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function HeroSection() {
   return (
@@ -45,11 +46,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          <img
-            src="/assets/pic-01.png"
-            alt="Graphic Design"
-            className="w-full max-w-md md:max-w-lg"
-          />
+          <Image src="/pic-01.png" alt="Hero Image" width={500} height={300} />
         </motion.div>
       </div>
     </motion.section>

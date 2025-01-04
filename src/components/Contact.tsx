@@ -19,7 +19,7 @@ export default function Contact() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           <h2 className="text-4xl font-extrabold mb-4">Get in Touch</h2>
-          <p className="text-lg">We'd love to hear from you!</p>
+          <p className="text-lg">We can&apos;t wait to meet you!</p>
         </motion.div>
 
         <motion.div
