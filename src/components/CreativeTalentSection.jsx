@@ -146,73 +146,13 @@ const CreativeTalentSection = () => {
           transition={{ duration: 0.8 }}
         >
           <div className="relative bg-white rounded-lg shadow-lg p-6">
-            <h3 className="font-semibold text-xl text-gray-600 mb-4">Welcome Ashish!</h3>
-            <div className="mb-6 flex flex-col lg:flex-row items-center lg:items-start">
-              <div className="lg:w-2/3">
-                <h4 className="text-sm font-medium text-gray-900 mb-2">Design Services</h4>
-                <ul className="text-gray-600">
-                  <li className="mb-1">Product Design</li>
-                  <li className="mb-1">Packaging Design</li>
-                  <li className="mb-1">Graphic Design</li>
-                  <li className="mb-1">Video Production</li>
-                  <li className="mb-1">Content Writing</li>
-                  <li className="mb-1">UX/UI Design</li>
-                </ul>
-              </div>
-              <div className="lg:w-1/3 mt-6 lg:mt-0 lg:ml-4 flex justify-center">
-                <Image
-                  src="/assets/building-websites_k2zp.svg"
-                  alt="Creative design services illustration"
-                  width={240}
-                  height={240}
-                  className="h-auto w-auto max-w-full"
-                />
-              </div>
-            </div>
-
-            <div className="grid grid-cols-2 gap-4">
-              {[
-                {
-                  name: "Anika Verma",
-                  role: "Packaging Designer",
-                  src: "/assets/avatar_7t6k.svg",
-                },
-                {
-                  name: "Arnav Mehta",
-                  role: "Illustrator",
-                  src: "/assets/male-avatar.svg",
-                },
-                {
-                  name: "Kanika Jain",
-                  role: "Product Designer",
-                  src: "/assets/avatar_7t6k.svg",
-                  highlight: true,
-                },
-                {
-                  name: "Shaan Desai",
-                  role: "Animator",
-                  src: "/assets/male-avatar.svg",
-                },
-              ].map(({ name, role, src, highlight }, index) => (
-                <div
-                  key={index}
-                  className={`flex items-center border p-2 rounded-lg ${highlight ? "bg-blue-50 border-blue-600" : "hover:border-sky-600"
-                    }`}
-                >
-                  <Image
-                    src={src}
-                    alt={`${name} profile`}
-                    width={50}
-                    height={50}
-                    className="rounded-full border  border-black"
-                  />
-                  <div className="ml-4">
-                    <p className="font-bold text-black">{name}</p>
-                    <p className="text-sm text-gray-500">{role}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
+             <Image
+                            src="/pic-09.png"
+                            alt="Arjun Mehta"
+                            height={200}
+                            width={600}
+                          
+                          />
           </div>
         </motion.div>
       </div>

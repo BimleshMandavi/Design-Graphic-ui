@@ -2,6 +2,7 @@
 "use client";
 
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 export default function BenefitSection() {
   return (
@@ -9,32 +10,38 @@ export default function BenefitSection() {
   
       {/* Benefit Section */}
       <div className="text-center mb-10">
-        <h2 className="text-3xl font-semibold">How we will benefit you.</h2>
+        <h2 className="text-5xl font-semibold">How we will benefit you.</h2>
       </div>
 
       {/* Grid Section */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className=" md:grid-cols-2 lg:grid-cols-3 gap-8  ">
         {/* Card 1 */}
         <motion.div
           whileHover={{ scale: 1.05 }}
-          className="bg-white text-black p-6 rounded-lg shadow-lg"
+          className="bg-white text-black p-6 rounded-lg shadow-lg sm:flex sm:justify-between sm:w-[70vw] ml-20"
         >
+          <div className='w-[30%]'>
           <h3 className="text-xl font-bold mb-2">Hire Us or On-board Top 1% Creative Talent ✨</h3>
           <p className="text-sm mb-4">
             Collaborate with our expert team for tailored, high-quality designs aligned with your brand's goals.
           </p>
+           <a href="#" className="text-blue-500 font-medium">Hire Designers →</a>
+           </div>
            <div className="text-center">
-            <img
-                src="/assets/cont.svg"
+            <Image
+                src="/pic-02.png"
                 alt="Arjun Mehta"
-                className="w-50 h-50 rounded-full mb-2"
+                height={800}
+                width={400}
+              
               />
               
             </div>
-          <a href="#" className="text-blue-500 font-medium">Hire Designers →</a>
+         
         </motion.div>
 
         {/* Card 2 */}
+        <div className='flex justify-evenly mt-12'>
         <motion.div
           whileHover={{ scale: 1.05 }}
           className="bg-white text-black p-6 rounded-lg shadow-lg"
@@ -44,6 +51,16 @@ export default function BenefitSection() {
             Strategically crafted concepts that captivate engagement and boost conversions to maximize profitability.
           </p>
           <a href="#" className="text-blue-500 font-medium">Know More →</a>
+          <div className="text-center mt-5">
+            <Image
+                src="/pic-03.png"
+                alt="Arjun Mehta"
+                height={300}
+                width={400}
+              
+              />
+              
+            </div>
         </motion.div>
 
         {/* Card 3 */}
@@ -56,7 +73,18 @@ export default function BenefitSection() {
             Scale your content with precisely crafted visuals that ensure consistency and lasting impact.
           </p>
           <a href="#" className="text-blue-500 font-medium">Know More →</a>
+          <div className="text-center mt-5">
+            <Image
+                src="/pic-04.png"
+                alt="Arjun Mehta"
+                height={900}
+                width={400}
+              
+              />
+              
+            </div>
         </motion.div>
+        </div>
       </div>
     </div>
   );

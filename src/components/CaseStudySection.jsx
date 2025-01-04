@@ -116,11 +116,11 @@ const CaseStudySection = () => {
             </h3>
             <div className="flex flex-col sm:flex-row items-center gap-6 sm:gap-12 justify-center md:justify-start">
               <div>
-                <p className="text-3xl sm:text-4xl font-bold text-green-400">250%</p>
+                <p className="text-3xl sm:text-6xl font-bold text-green-400">250%</p>
                 <p className="text-xs sm:text-sm text-gray-300">Increase in Click Rate</p>
               </div>
               <div>
-                <p className="text-3xl sm:text-4xl font-bold text-green-400">192k+</p>
+                <p className="text-3xl sm:text-6xl font-bold text-green-400">192k+</p>
                 <p className="text-xs sm:text-sm text-gray-300">Leads Generated with Creatives</p>
               </div>
             </div>
@@ -141,10 +141,10 @@ const CaseStudySection = () => {
             className="flex justify-center"
           >
             <Image
-              src="/assets/cont.svg"
+              src="/pic-10.png"
               alt="Tops Case Study"
-              width={400}
-              height={400}
+              width={200}
+              height={200}
               className="w-3/4 sm:w-2/3 md:w-full rounded-lg shadow-lg"
             />
           </motion.div>

@@ -306,14 +306,16 @@ export default function TakeAdvantageSection() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.3 + index * 0.1 }}
             >
+              <div className="flex items-center gap-1">
               
               <Image
                 src={item.icon}
                 alt={item.title}
-                width={500} height={300}
+                width={20} height={20}
                 className="w-12 h-12 mb-4"
               />
               <h3 className="text-lg text-gray-600 font-bold mb-2">{item.title}</h3>
+              </div>
               <p className="text-sm text-gray-600">{item.description}</p>
             </motion.div>
           ))}

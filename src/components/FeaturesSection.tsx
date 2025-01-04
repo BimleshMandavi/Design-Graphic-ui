@@ -5,17 +5,17 @@ import { motion } from 'framer-motion';
 export function FeaturesSection() {
     const features = [
       {
-        title: "Punctuality Meets Perfection",
+        title: "Punctuality Meets Perfection ⏰ ",
         description: "We deliver creatives, precise designs on schedule, ensuring excellence for your brand every time.",
         icon: "/assets/punctual.png", // Replace with actual icon paths if needed
       },
       {
-        title: "Showcase Your Brand’s Personality",
+        title: "Showcase Your Brand’s Personality 🌟",
         description: "Whether it’s minimalist elegance or bold statements, we tailor designs that resonate with your audience.",
         icon: "/assets/watch.svg", // Replace with actual icon paths if needed
       },
       {
-        title: "Engage with Strategic Visuals",
+        title: "Engage with Strategic Visuals 📈 ",
         description: "From social media posts to digital ads, our graphics are crafted to drive engagement and action.",
         icon: "/assets/grap.svg", // Replace with actual icon paths if needed
       },
@@ -42,13 +42,13 @@ export function FeaturesSection() {
             {features.map((feature, index) => (
               <motion.div
                 key={index}
-                className=" p-6 rounded-lg text-center flex flex-col items-center"
+                className=" p-6 rounded-lg  flex flex-col "
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.6, delay: 0.3 + index * 0.2 }}
               >
                 <img src={feature.icon} alt={feature.title} className="w-16 h-16 mb-4" />
-                <h3 className="text-xl font-bold mb-2">{feature.title}</h3>
+                <h3 className="text-4xl font-bold mb-2">{feature.title}</h3>
                 <p className="text-sm text-gray-300">{feature.description}</p>
               </motion.div>
             ))}
